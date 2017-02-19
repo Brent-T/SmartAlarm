@@ -1,0 +1,51 @@
+page-home {
+  .home-content {
+    .scroll-content {
+      padding: 0px;
+    }
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      height: 100%;
+      width: 100% !important;
+      margin: 0px !important;
+
+      img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+      }
+    }
+
+    .card-title {
+      position: absolute;
+      top: 30%;
+      font-size: 3.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.8em;
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      color: #fff;
+    }
+
+    .button-row {
+      margin-top: 25px;
+    }
+
+    .button-col {
+      margin: 0px 40px;
+    }
+
+    .redirect-btn {
+      border-radius: 10px !important;
+      border: 1px solid #ffffff;
+    }
+  }
+}

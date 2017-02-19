@@ -1,0 +1,22 @@
+page-profile {
+  .profile-content {
+    .img-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile-picture {
+      max-height: 20rem;
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+    .info-title {
+      font-weight: bold;
+    }
+
+    .edit-btn, .logout-btn {
+      border-radius: 10px !important;
+    }
+  }
+}

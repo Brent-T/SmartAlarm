@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Home</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home-content" padding>
+  <ion-card>
+    <img src="img/office.jpg"/>
+    <div class="card-title">SmartAlarm</div>
+    <div class="card-subtitle">
+      <ion-row>
+        <ion-col>Get there... in time</ion-col>
+      </ion-row>
+
+      <ion-row class="button-row">
+        <ion-col class="button-col">
+          <button class="redirect-btn" ion-button block (click)="goToAlarms()">Go to my alarms</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+</ion-content>

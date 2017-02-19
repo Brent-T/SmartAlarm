@@ -1,0 +1,59 @@
+page-login {
+  .login-content {
+    background: #56CA96;
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo-row {
+      color: #FFF;
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+      ion-icon {
+        font-size: 6rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .login-form {
+      background: #399F8B;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+
+    ion-item {
+      border-radius: 10px !important;
+      padding-left: 30px !important;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      box-shadow: none !important;
+    }
+
+    .item-inner {
+      border-bottom-color: #ffffff !important;
+      box-shadow: none !important;
+    }
+
+    .button-col {
+      margin: 0px 18px;
+    }
+
+    .submit-btn {
+      background: #51CFB1;
+      border-radius: 10px !important;
+      border: 1px solid #ffffff;
+    }
+
+    .register-btn {
+      color: #ffffff;
+      font-size: 0.8em;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<ion-content class="login-content" padding>
+
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+
+    <ion-col width-80>
+      <ion-icon name="alarm"></ion-icon>
+      <h2>SmartAlarm</h2>
+    </ion-col>
+
+    <ion-col></ion-col>
+  </ion-row>
+
+  <div class="login-form">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-input type="email" placeholder="Email" name="email" [(ngModel)]="loginCredentials.email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="button-col">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid">Login</button>
+          <button ion-button class="register-btn" block clear (click)="register()">Create New Account</button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </div>
+</ion-content>

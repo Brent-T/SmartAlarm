@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>My profile</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="profile-content" padding>
+  <ion-card>
+    <ion-row class="img-row">
+      <ion-col></ion-col>
+
+      <ion-col width-67>
+        <img class="profile-picture" src="http://placehold.it/200x200">
+      </ion-col>
+
+      <ion-col></ion-col>
+    </ion-row>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="info-title" width-50>Firstname: </ion-col>
+          <ion-col width-50>{{ currentUser.firstname }}</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="info-title" width-50>Surname: </ion-col>
+          <ion-col width-50>{{ currentUser.surname }}</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="info-title">Email address:</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>{{ currentUser.email }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col class="button-col">
+      <button class="logout-btn" ion-button color="danger" block outline (click)="logout()">Logout</button>
+    </ion-col>
+  </ion-row>
+</ion-content>

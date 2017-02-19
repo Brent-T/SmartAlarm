@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add alarm</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="add_alarm-content" padding>
+  <div>
+    <form (ngSubmit)="addAlarm()" #addAlarmForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-label stacked>Name: </ion-label>
+              <ion-input type="text" name="name" [(ngModel)]="alarm.name" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Date: </ion-label>
+              <ion-input type="date" name="date" [(ngModel)]="alarm.date" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Time of arrival: </ion-label>
+              <ion-input type="time" name="time" [(ngModel)]="alarm.time" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>From: </ion-label>
+              <ion-input id="location_from" type="text" name="start_location" [(ngModel)]="alarm.start_location" required></ion-input>
+            </ion-item>
+
+            <ion-item class="current_location-item" (click)="setStartToCurrentLocation()">
+              <ion-icon name="locate" item-left></ion-icon> Use my current location
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>To: </ion-label>
+              <ion-input id="location_to" type="text" name="end_location" [(ngModel)]="alarm.end_location" required></ion-input>
+            </ion-item>
+
+            <ion-item class="transportation-item">
+              <ion-label stacked>Transportation: </ion-label>
+              <ion-select name="transportation" [(ngModel)]="alarm.transportation" required>
+                <ion-option *ngFor="let option of transport_options" value="{{ option }}">{{ option }}</ion-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Preperation time: </ion-label>
+              <ion-input type="number" name="prep_time" [(ngModel)]="alarm.prep_time" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Description (optional): </ion-label>
+              <ion-input type="textarea" name="description" [(ngModel)]="alarm.description"></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="button-col">
+          <button class="add-btn" ion-button full type="submit" [disabled]="!addAlarmForm.form.valid">Add alarm</button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </div>
+</ion-content>
+

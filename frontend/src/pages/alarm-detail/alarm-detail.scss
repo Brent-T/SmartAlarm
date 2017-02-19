@@ -1,0 +1,35 @@
+page-alarm-detail {
+  .alarm_detail-content {
+    ion-card {
+      text-align: center;
+    }
+
+    .alarm-wake_up {
+      font-size: 5.5rem;
+    }
+
+    .alarm-name {
+      font-size: 2.2rem;
+    }
+
+    ion-item {
+      color: #000;
+
+      p {
+        color: #000;
+      }
+    }
+
+    .item-title {
+      font-weight: bold;
+    }
+
+    .button-col {
+      margin: 0px 5px;
+    }
+
+    .edit-btn, .delete-btn {
+      border-radius: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+page-register {
+  .register-content {
+    background: #56CA96;
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    .register-form {
+      background: #509287;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    ion-item {
+      border-radius: 10px !important;
+      padding-left: 30px !important;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      box-shadow: none !important;
+    }
+
+    .item-inner {
+      border-bottom-color: #ffffff !important;
+      box-shadow: none !important;
+    }
+
+    .button-col {
+      margin: 0px 16px;
+    }
+
+    .submit-btn {
+      background: #51CFB1;
+      border-radius: 10px !important;
+      border: 1px solid #ffffff;
+    }
+  }
+}

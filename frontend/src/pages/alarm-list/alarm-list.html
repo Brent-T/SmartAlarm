@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>My alarms</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="alarm_list-content" padding>
+  <ion-list>
+    <ion-item *ngFor="let alarm of alarms">
+      <h1 item-left class="wake_up-time">{{ alarm.wake_up | date:'HH:mm' }}</h1>
+      <h2>{{ alarm.name }}</h2>
+      <p><ion-icon name="time"></ion-icon> {{ alarm.arrival | date:'HH:mm' }}</p>
+      <p><ion-icon name="calendar"></ion-icon> {{ alarm.arrival | date:'dd/MM/yyyy' }}</p>
+      <p><ion-icon name="flag"></ion-icon> {{ alarm.end_location }}</p>
+      <button ion-button clear item-right (click)="alarmDetail($event, alarm)">Details</button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab bottom center>
+    <button ion-fab (click)="addAlarm($event)"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

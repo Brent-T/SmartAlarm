@@ -1,0 +1,30 @@
+page-add-alarm {
+  .add_alarm-content {
+    .current_location-item {
+      font-size: 1.2em;
+      padding: 0px;
+      text-align: center;
+
+      ion-icon {
+        font-size: 23px;
+      }
+
+      .item-inner {
+        border: 0px;
+      }
+    }
+
+    .transportation-item {
+      padding-left: 0px;
+    }
+
+    .button-col {
+      margin: 0px 10px;
+    }
+
+    .add-btn {
+      border-radius: 10px !important;
+      border: 1px solid #ffffff;
+    }
+  }
+}
