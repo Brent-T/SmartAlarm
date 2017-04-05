@@ -1,14 +1,14 @@
-#Smartalarm
+# Smartalarm
 
 This application was made for Project 2, 3rd year Elektronica-ICT @ Odisee Gent
 
-##Stack
+## Stack
 
 * Frontend: Ionic 2 & Angular 2
 * Database: MySql
 * Backend: Nodejs
 
-####Frontend
+#### Frontend
 
 Set up:
 
@@ -22,7 +22,7 @@ Start Ionic app:
 ionic serve
 ```
 
-####Backend
+#### Backend
 
 Set up:
 
@@ -36,6 +36,6 @@ Start server:
 node server.js
 ```
 
-####Database
+#### Database
 
 The database of this project is a simple MySql-database, the scheme can be found in `./database`
